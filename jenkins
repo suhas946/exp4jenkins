@@ -1,0 +1,23 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building from Git repository'
+            }
+        }
+
+        stage('Test') {
+            steps {
+                echo 'Testing from Git repository'
+            }
+        }
+
+        stage('Deploy') {
+            steps {
+                echo 'Deploying from Git repository'
+            }
+        }
+    }
+}
